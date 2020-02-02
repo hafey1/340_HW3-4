@@ -1,0 +1,90 @@
+								Robert Niggebrugge
+								2/1/2020
+			Homework 3-4 Scheduling
+
+a) If assuming simultaneous arrival and an arbitrary queue of Job1, Job2, Job3, Job4:
+order:   	   |Job 1      |Job 2     |Job 3     |Job 4     |
+
+Start time--->		0	  10         25         30
+
+End time----->	       10         25         30         52
+
+Turnaround time->      10	  25  	     30   	52
+
+Response time -->      0	  10	     25		30
+
+Average turnaround time ~ 29.25
+
+Average response time ~ 16.25
+
+
+b) If assuming simultaneous arrival:
+order:             |Job 3      |Job 4     |Job 2     |Job 1     |
+
+Start time--->		0	  5           15        30
+
+End time----->          5         15          30        55
+
+Turnaround time->       5	  15	      30        55
+
+Response time -->	0	  5	      15        30
+
+Average turnaround time ~ 26.25
+
+Average response time ~ 12.5
+
+c)With the given arrival times
+
+order:             |Job 2      |Job 3     |Job 4     |Job 1     |
+
+Start time--->       0		 15	   20           30
+
+End time----->	     15		 20        30           55
+
+Turnaround time->    15          15        20           55
+
+Response time -->    0           10        10           30
+
+Average turnaround time ~ 26.25
+
+Average response time ~ 12.5
+
+
+d)With the given arrival times and a timeslice of 5 seconds
+
+                         |Job 1      |Job 2     |Job 3     |Job 4     |
+
+Start time--->              0		5	  10          15
+
+End time----->              50         30          15         45
+
+Turnaround time->           50         30         10          35
+
+Response time -->           0          5          5           5
+
+Average turnaround time ~  31.25
+
+Average response time ~ 3.75
+
+3)
+
+ai)
+   Final statistics:
+  Job  0: startTime   0 - response   0 - turnaround  37
+  Job  1: startTime   0 - response   7 - turnaround 160
+  Job  2: startTime   0 - response  16 - turnaround 120
+  Job  3: startTime   0 - response  19 - turnaround 196
+
+  Avg  3: startTime n/a - response 10.50 - turnaround 128.25
+
+aii) As the Boost time value decreases from a value below of around 20 the average response time goes down by an almost constant factor all the way down to a average response time of 2.25 with the boost time value of 1. The average turnover time starts to decrease slightly between the boost time values of 10 to 1. Given the value of 1 the average turnover lowers to 126.25
+
+bi) 
+  Given the first job started at time 0, the average response time was 1.75, and the average turnaround time was 19.25. 
+Job 0: response = 2 :: turnaround = 12
+Job 1: response = 0 :: turnaround = 22
+Job 2: response = 1 :: turnaround = 17
+Job 3: response = 4 :: turnaround = 26
+
+bii)
+  Increasing the time slice led to an increased time of overall completion of the tasks, the best result would be from the smallest slice possible given that the process of switching tasks was not impacting performance. In this case the smallest slice was 1, which was already the default value. Increases past actual length of time to compete any given task wasted time.
